@@ -16,7 +16,7 @@ botaoAdicionar.addEventListener("click", function(event) {
 
     if (!validaPaciente(paciente)){
 
-    console.log("paciente inválido")
+    console.log("paciente inválido");
     return;
     }
 
@@ -69,12 +69,10 @@ function montarTd (dado, classe){
 
 }
 
-function validaPaciente(paciente){
-
-    if(validaPeso(paciente.peso)){
-        return "";
+function validaPaciente(paciente) {
+    if (validaPeso(paciente.peso)) {
+        return true;
     } else {
-        return "O peso é inválido";
+        return false;
     }
-    
 }
